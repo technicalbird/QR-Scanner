@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\res\\merged\\release\\layout-v17\\activity_main.xml",
+        "source": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\src\\main\\res\\layout-v17\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\res\\merged\\release\\layout-v17\\mr_media_route_list_item.xml",
+        "source": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\layout-v17\\mr_media_route_list_item.xml"
+    }
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyQRScanner.iml" filepath="$PROJECT_DIR$/MyQRScanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google_qr_scanner/google_qr_scanner.iml" filepath="$PROJECT_DIR$/google_qr_scanner/google_qr_scanner.iml" />
+    </modules>
+  </component>
+</project>

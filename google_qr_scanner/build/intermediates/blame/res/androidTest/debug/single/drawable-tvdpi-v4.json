@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_medium_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_tall_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-plus\\8.1.0\\res\\drawable-tvdpi\\ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-tvdpi-v4\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\Ankit\\AndroidStudioProjects\\MyQRScanner\\google_qr_scanner\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
+    }
+]
