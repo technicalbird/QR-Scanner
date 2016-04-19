@@ -43,11 +43,12 @@ public class MainActivity extends AppCompatActivity {
         webView.setVisibility(View.INVISIBLE);
     }
     @OnClick(R.id.scan_qr_code_button)
+    //perform action on button click
     public void onClick(View view) {
         Intent intent=new Intent(this,BarcodeCaptureActivity.class);
         startActivityForResult(intent,RC_BARCODE_CAPTURE);
     }
-
+    //get result back to parent Activity.
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == RC_BARCODE_CAPTURE) {
