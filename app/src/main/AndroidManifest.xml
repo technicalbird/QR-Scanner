@@ -29,6 +29,10 @@
             android:label="@string/title_activity_barcode_capture"
             android:screenOrientation="landscape">
         </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="16d6aee0fb2061f38e43e990de3cac6cd9f0c132" />
     </application>
 
 </manifest>

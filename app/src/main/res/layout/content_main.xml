@@ -13,7 +13,13 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="technicalbird.myqrscanner.MainActivity"
     tools:showIn="@layout/bird_activity">
-
+    <!-- <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:onClick="forceCrash"
+         android:text="Force Crash!"/>
+  -->
     <TextView
         android:id="@+id/title_qr_scanner"
         android:layout_width="wrap_content"
