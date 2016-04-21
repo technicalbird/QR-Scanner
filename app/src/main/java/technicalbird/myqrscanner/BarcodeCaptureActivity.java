@@ -54,6 +54,10 @@ public final class BarcodeCaptureActivity extends AppCompatActivity {
     public static final String AutoFocus = "AutoFocus";
     public static final String UseFlash = "UseFlash";
     public static final String BarcodeObject = "Barcode";
+    private static final String CAMERA_PERMISSION = "Access to the camera is needed for detection";
+    private static final String NO_CAMERA_PERMISSION = "Camera permission Missing";
+    private static final String POSTIVE_BUTTON_OK ="ok" ;
+    private static final String LOW_STORAGE = "Low storage";
 
     private CameraSource mCameraSource;
     private CameraSourcePreview mPreview;
@@ -78,8 +82,8 @@ public final class BarcodeCaptureActivity extends AppCompatActivity {
 
         Picasso.with(getApplicationContext())
                 .load(IMAGE_URL)
-                .placeholder(R.drawable.ic_media_route_off_mono_dark)
-                .error(R.drawable.ic_media_route_off_mono_dark)
+                .placeholder(R.mipmap.ic_launcher)
+                .error(R.mipmap.ic_launcher)
                 .into(imageView);
 
 
@@ -130,9 +134,9 @@ public final class BarcodeCaptureActivity extends AppCompatActivity {
             }
         };
 
-        Snackbar.make(mGraphicOverlay,"Permission",
+        Snackbar.make(mGraphicOverlay,CAMERA_PERMISSION,
                 Snackbar.LENGTH_INDEFINITE)
-                .setAction("ok", listener)
+                .setAction(POSTIVE_BUTTON_OK, listener)
                 .show();
     }
 
@@ -184,8 +188,8 @@ public final class BarcodeCaptureActivity extends AppCompatActivity {
             boolean hasLowStorage = registerReceiver(null, lowstorageFilter) != null;
 
             if (hasLowStorage) {
-                Toast.makeText(this, "Low storage", Toast.LENGTH_LONG).show();
-                Log.w(TAG, "low storage");
+                Toast.makeText(this, LOW_STORAGE, Toast.LENGTH_LONG).show();
+                Log.w(TAG, LOW_STORAGE);
             }
         }
 
@@ -286,8 +290,8 @@ public final class BarcodeCaptureActivity extends AppCompatActivity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Multitracker sample")
-                .setMessage("No Camera Persmiision")
-                .setPositiveButton("OK", listener)
+                .setMessage(NO_CAMERA_PERMISSION)
+                .setPositiveButton(POSTIVE_BUTTON_OK, listener)
                 .show();
     }
 

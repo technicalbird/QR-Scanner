@@ -9,6 +9,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
 import com.crashlytics.android.ndk.CrashlyticsNdk;
@@ -21,6 +22,16 @@ import butterknife.OnClick;
 import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String ERROR_MESSAGE = "Error in Reading barcode";
+    private static final String NO_BARCODE_CAPTURE = "No barcode captured";
+
+    //google search url on run on successful scan
+    private static final String GOOGLE_SEARCH = "https://www.google.com/search?q=";
+
+    private String resultWebsiteName = null;
+    private static final int RC_BARCODE_CAPTURE = 900;
+    private static final String TAG = "TAG";
+
     @Bind(R.id.toolbar)
     Toolbar toolbar;
     @Bind(R.id.scan_qr_code_button)
@@ -29,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
     TextView resultViewer;
     @Bind(R.id.webview_for_diplaying_data)
     WebView scannedQRResultShower;
-    private static final String TAG = "TAG";
-    private String resultWebsiteName = "";
-    private static final int RC_BARCODE_CAPTURE = 900;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,21 +85,22 @@ public class MainActivity extends AppCompatActivity {
                     scanButton.setText("Scan Another QR Code");
                     resultViewer.setText(barcode.displayValue);
                     scannedQRResultShower.setVisibility(View.VISIBLE);
-                    resultWebsiteName = "https://www.google.com/search?q=" + barcode.displayValue;
+                    resultWebsiteName = GOOGLE_SEARCH + barcode.displayValue;
                     scannedQRResultShower.getSettings().setJavaScriptEnabled(true);
                     scannedQRResultShower.loadUrl(resultWebsiteName);
                     scannedQRResultShower.setWebViewClient(new WebViewController());
                     Log.d(TAG, "Barcode read: " + barcode.displayValue);
                 } else {
                     //no barcode captured
-                    resultViewer.setText("No barcode captured");
+                    resultViewer.setText(NO_BARCODE_CAPTURE);
+                    Toast.makeText(getApplicationContext(), NO_BARCODE_CAPTURE, Toast.LENGTH_LONG).show();
                     scannedQRResultShower.setVisibility(View.INVISIBLE);
                     Log.d(TAG, "No barcode captured, intent data is null");
                 }
             } else {
                 //error in reading barcode
                 scannedQRResultShower.setVisibility(View.INVISIBLE);
-                resultViewer.setText("Error in Reading barcode");
+                resultViewer.setText(ERROR_MESSAGE);
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);
