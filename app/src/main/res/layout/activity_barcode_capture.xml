@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/topLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="horizontal"
+    android:weightSum="1">
+0
+    <technicalbird.myqrscanner.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".5">
+
+        <technicalbird.myqrscanner.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </technicalbird.myqrscanner.CameraSourcePreview>
+    <ImageView
+        android:id="@+id/picassa_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@android:mipmap/sym_def_app_icon"/>
+
+
+</LinearLayout>

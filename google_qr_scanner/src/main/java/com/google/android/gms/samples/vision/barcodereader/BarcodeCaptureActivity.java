@@ -73,6 +73,9 @@ public final class BarcodeCaptureActivity extends AppCompatActivity {
     public static final String UseFlash = "UseFlash";
     public static final String BarcodeObject = "Barcode";
 
+    //constant url for fetching image from internet using picasso library
+    private static final String IMAGE_URL="http://www.visionsmarts.com/img/vs-reader-qr.jpg";
+
     private CameraSource mCameraSource;
     private CameraSourcePreview mPreview;
     private GraphicOverlay<BarcodeGraphic> mGraphicOverlay;
@@ -81,7 +84,6 @@ public final class BarcodeCaptureActivity extends AppCompatActivity {
     private ScaleGestureDetector scaleGestureDetector;
     private GestureDetector gestureDetector;
     private ImageView imageView;
-    private static final String IMAGE_URL="http://www.visionsmarts.com/img/vs-reader-qr.jpg";
     /**
      * Initializes the UI and creates the detector pipeline.
      */

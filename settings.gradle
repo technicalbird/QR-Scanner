@@ -1,1 +1,1 @@
-include ':app', 'google_qr_scanner'
+include ':app'

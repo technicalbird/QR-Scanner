@@ -32,7 +32,8 @@
         </activity>
         <activity
             android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity"
-            android:label="Read Barcode" />
+            android:label="Read Barcode"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

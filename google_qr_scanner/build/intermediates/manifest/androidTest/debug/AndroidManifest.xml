@@ -54,7 +54,8 @@
         </activity>
         <activity
             android:name="com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity"
-            android:label="Read Barcode" />
+            android:label="Read Barcode"
+            android:screenOrientation="landscape" />
  <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
